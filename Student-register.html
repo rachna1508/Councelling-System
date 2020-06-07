@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log in or register</title>
+        <link rel="stylesheet" type="text/css" href="css/register.css"/>
+        <script type="text/javascript" src="js/main.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Login,register,student,Student login">
+        <meta name="description" content="User and University login or register page.">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="loginbox">
+            <a href="#"><img src="images/institute.png" id="avatar2" alt="Institute login link."></a>
+            <div id="form">
+                <h1 id="login">Student Register</h1>
+                <form action="student_register.php" method="post">
+                    <!-- Center align form. -->
+                    <center>
+                        <table cellspacing="10" id="div1">
+                            <tr>
+                                <td class="spacing" colspan="2"><b>Personal Details</b></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right" width="40%"> First Name</td>
+                                <td width="55%"><input id="fname" name="1name" type="text" required></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Last Name</td>
+                                <td><input id="lname" name="2name"  type="text" ></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right" width="40%"> Username</td>
+                                <td width="55%"><input class="username" name="user" type="text" required></td>
+                            </tr> <tr>
+                                <td class="margin-right" align="right" width="40%">Password</td>
+                                <td width="55%"><input name="pass" type="password" required></td>
+                            </tr> <tr>
+                                <td class="margin-right" align="right" width="40%">Retype Password </td>
+                                <td width="55%"><input name="re_pass" type="password" required></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Father's Name</td>
+                                <td><input type="text" name="fname" id="father_name" required></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Mother's Name</td>
+                                <td><input id="mother_name" name="mname" type="text" required></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Date of Birth</td>
+                                <td><input id="dob" name="dateofbirth" type="date" required></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Gender</td>
+                                <td>
+                                    <input name="gender" id="gender1" type="radio"  value="M" required>Male
+                                    <input type="radio" value="F" name="gender" id="gender2" required>Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Email</td>
+                                <td><input id="email" name="mail" type="text" required></td>
+                            </tr>
+
+                            <tr><td></td></tr>
+
+                            <tr>
+                                <td class="spacing" colspan="2" align="left"><b>Address Information: </b></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Address</td>
+                                <td><textarea rows="4" id="address" name="addr" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">City</td>
+                                <td><input id="city" name="incity" type="text" required></td>
+                            </tr>
+
+                            <tr>
+                                <td class="margin-right" align="right">State</td>
+                                <td><input id="state" name="instate" type="text" required></td>
+                            </tr>
+
+                            <tr>
+                                <td class="margin-right" align="right">Pin Code</td>
+                                <td><input id="pin" name="inpin" type="text" required></td>
+                            </tr>
+
+                            <tr>
+                                <td class="margin-right" align="right">Mobile</td>
+                                <td><input id="mobile" name="mob" type="text" required></td>
+                            </tr>
+
+                            <tr><td></td></tr>
+                            <tr>
+                                <td class="spacing" colspan="2"><b>Academic Details: </b></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Qualification </td>
+                                <td><input type="checkbox" class="cb" id="high_School" name="hs" value="High School">High School</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" name="tempname" class="cb"  id="senior_secondary_school" value="Senior secondary">Senior Secondary School</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" name="ug" class="cb" id="graduation"  value="Graduation">Graduation</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" name="pg" class="cb" id="post"  value="Post Graduation">Post Graduation</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" name="phd" class="cb" id="Phd" value="PHD">Phd.</td>
+                            </tr>
+
+                            <tr>
+                                <td class="margin-right" align="right">Career Objectives</td>
+                                <td colspan="2">
+                                    <input  type="button" id="addRow1" name="add_achivements" value="Add" onClick="insertRow('achieve1', 'carrear_objective')" />&nbsp;
+                                    <input  type="button" id="addRow2" name="add_achivements" value="Delete" onClick="delrow('achieve1')" /></td>
+                            </tr>
+                            <tr id="adder1">
+                                <td></td>
+                                <td id="achieve1"></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Achievements</td>
+                                <td colspan="2">
+                                    <input  type="button" id="addRow1" name="add_achivements" value="Add" onClick="insertRow('achieve2', 'achievement')" />&nbsp;
+                                    <input  type="button" id="addRow2" name="add_achivements" value="Delete" onClick="delrow('achieve2')" />
+                                </td>
+                            </tr>
+                            <tr id="adder2">
+                                <td rowspan="1" colspan="2" id="achieve2"></td>
+                            </tr>
+                            <tr>
+                            <center><td colspan="2" align="right"><input type="submit"  id="sub" name="submit" value="Register" ></td></center>
+                            </tr>
+                        </table></center>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<!--onclick="st_reg_valid()"-->

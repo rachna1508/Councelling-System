@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Info</title>
+        <link rel="stylesheet" type="text/css" href="css/register.css"/>
+        <script type="text/javascript" src="js/main.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Login,register,student,Student login">
+        <meta name="description" content="User and University login or register page.">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="loginbox">  
+        <a href="#"><img src="images/institute.png" id="avatar2" alt="Institute login link."></a>          
+            <div id="form">   
+             <h1 id="login">Create Event</h1>             
+                <form action="create_event.php" method="post">
+
+                    <center>
+                        <table cellspacing="10" id="div1">
+                            
+                            <tr>
+                                <td class="margin-right" align="right">Heading</td>
+                                <td width="55%"><input id="fname" type="text" name="head"required></td>
+                            </tr>
+                            <tr>
+                                <td class="margin-right" align="right">Description</td>
+                                <td><textarea rows="4" id="address" name="desc" required></textarea></td>
+                            </tr> 
+
+                            <tr>
+                                <td class="margin-right" align="right">Date</td>
+                                <td><input id="dob" type="date" name="ddate" required></td>
+                            </tr>
+                            <tr>
+                            <td class="margin-right" align="right">Notifications</td>
+                            <td>
+                                <input type="radio" name="title" value="Entrance">Entrance Notification<br>
+                                <input type="radio" name="title" value="Admission">Admission Notification<br>
+                               </td>
+                            </tr>
+                            
+                            <tr>
+                                <center><td colspan="2" align="right"><input type="submit"  id="sub" name="submit" value="Submit"></td></center>
+                            </tr>
+                        </table></center>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #F5F6FA;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+p{
+	color: black;
+}
+a{
+	color: #7CB4CE;
+}
+.loginbox{
+	margin-top: 700px;
+	width:40%;
+	background-color:#3C5A99;
+	color:#3C5A99;
+	top:50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing:border-box;
+	padding:135px 50px 0 10px;
+}
+#avatar1{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: relative;
+	top: -155px;
+	left: calc(50%,-50px);
+}
+#avatar2{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+	margin: -6px -6px 10px 250px;
+	top: -170px;
+	left: calc(55%,-50px);
+}
+#form{
+	position: relative;
+	top:-155px;
+}
+#login{
+	text-align: center;
+	padding:0 0 20px;
+	padding-left: 100px;
+	color:black;
+}
+#form.h1{
+	font-size: 16px;
+}
+#form p{
+	margin:0;
+	padding:0;
+	font-size: 17px;
+	font-weight: bold;
+}
+#form h1{
+	margin-top: -6px;
+	margin-bottom: -6px;
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.loginbox input[type="text"],input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height: 40px;
+}
+#form input[type="submit"]
+{
+	border:none;
+	outline:none;
+	height: 40px;
+	background:#73B35E;
+	font-size: 18px;
+	border-radius: 20px;	
+}
+#div1{
+	color:black;
+
+}
+textarea{
+	border-radius: 10px;
+}
+input[type="date"],input[type="text"] {
+	border-radius: 10px;
+width:100%;
+}
+textarea{
+	width:100%;
+}
+#sub{
+	width:90%;
+}
